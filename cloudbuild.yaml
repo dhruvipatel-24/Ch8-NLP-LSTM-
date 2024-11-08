@@ -11,3 +11,7 @@ steps:
   args: ['run', 'deploy', 'ch8-nlp-lstm', '--image', 'gcr.io/ch8-nlp-lstm-441117/ch8-nlp-lstm', '--region', 'us-central1', '--platform', 'managed','--port','80']
 images:
 - gcr.io/ch8-nlp-lstm-441117/ch8-nlp-lstm
+
+# Include logging options
+options:
+  logging: CLOUD_LOGGING_ONLY
